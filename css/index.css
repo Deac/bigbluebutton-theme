@@ -1,0 +1,80 @@
+body {
+	font-family:'Share-Regular';
+	font-size:14px;
+}
+
+#header {
+	padding-bottom:10px;
+	float:left;
+	display:block;
+}
+
+#claim {
+	font-family:'Share-Regular';
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+#joinAMeeting,
+#invitation,
+#createMeetingForm, 
+#activeMeetings {
+	width: 400px;
+	float:left;
+	border:1px solid #ccc;
+	clear:both;
+	margin:0 20px 20px 0;
+}
+
+#joinAMeeting h2,
+#invitation h2,
+#createMeetingForm h2,
+#activeMeetings h2 {
+	background-color:#444;
+	color:#fff;
+	padding: 2px 4px;
+	margin: 0;
+}
+
+#invitation p,
+#activeMeetings #no_meetings,
+#activeMeetings #meetings {
+	padding: 0 4px;
+}
+
+#createMeetingForm {
+	clear:none;
+}
+
+#joinAMeeting form,
+#createMeetingForm form {
+	padding: 0 4px;
+}
+
+#joinsubmit,
+#submit-button {
+	float:right;
+	font-family:'Share-Regular';
+	font-size:18px;
+}
+
+#joinus {
+	display:block;
+	float:right;
+}
+
+.hiddenDiv {
+	clear:both;
+}
+
+.hiddenDiv table {
+	width: 100%;
+}
+
+.hor-minimalist-b caption {
+	background-color: #ccc;
+}
+
+.hor-minimalist-b th {
+	text-align: left;
+}

@@ -1,0 +1,10 @@
+
+<%!
+// This is the security salt that must match the value set in the BigBlueButton server
+// You can get this by executing `bbb-conf --salt`
+String salt = "";
+
+// This is the URL for the BigBlueButton server
+String BigBlueButtonURL = "http://example.org/bigbluebutton/";
+%>
+
