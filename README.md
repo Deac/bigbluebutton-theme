@@ -19,7 +19,8 @@ This code has been created for BBB version 0.72 and was successfully used with a
 Installation
 ------------
 
-* Put the contents of this repository into a subdirectory of the <tt>webapps/bigbluebutton/</tt> directory, e.g. <tt>typo3/</tt>. On Debian/Ubuntu, this would usually be located in <tt>/var/lib/tomcat6/</tt> and result in <tt>/var/lib/tomcat6/webapps/bigbluebotton/typo3/</tt>. 
+* Put the contents of this repository into a subdirectory of the <tt>webapps/bigbluebutton/</tt> directory, e.g. <tt>typo3/</tt>. On Debian/Ubuntu, this would usually be located in <tt>/var/lib/tomcat6/</tt> and result in <tt>/var/lib/tomcat6/webapps/bigbluebotton/typo3/</tt>.
+* Change ownership of directory and its contents by executing <tt>chown -R tomcat6.tomcat6 /var/lib/tomcat6/webapps/bigbluebutton/typo3/</tt>.
 * Copy the <tt>bbb_api_conf.jsp.dist</tt> file to <tt>bbb_api_conf.jsp</tt>.
     - Set <tt>salt</tt> to your BBB's salt value, which can be retrieved using <tt>bbb-conf --salt</tt>. Do not share this with others, if you do not want anybody else to directly use the API. Usually, only your web interface should use the API.
     - Set <tt>BigBlueButtonURL</tt> to the URL of your BigBlueBotton server, e.g. http://example.org/bigbluebutton/.
