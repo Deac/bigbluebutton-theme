@@ -33,6 +33,7 @@
 %>
 
 <%@page import="org.w3c.dom.*"%>
+<%@page import="org.apache.commons.lang.StringEscapeUtils"%>
 
 <html>
 <head>
@@ -100,8 +101,8 @@ if (request.getParameterMap().isEmpty()) {
 					<a href="<%=inviteURL%>"><%=inviteURL%></a>
 
 					<form name="form1" target="_parent" method="get">
-						<input type="hidden" name="username" value="<%=username%>" />
-						<input type="hidden" name="meetingID" value="<%=meetingID%>" />
+						<input type="hidden" name="username" value="<%=StringEscapeUtils.escapeHtml(username)%>" />
+						<input type="hidden" name="meetingID" value="<%=StringEscapeUtils.escapeHtml(meetingID)%>" />
 						<input type=hidden name=action value="create">
 						<input id="submit-button" type="submit" value="Go to your meeting" />
 					</form>
@@ -129,12 +130,12 @@ if (request.getParameterMap().isEmpty()) {
 		String meetingIDInvitation = request.getParameter("meetingID");
 	%>
 	<div id="joinAMeeting">
-		<h2>Join "<%=meetingIDInvitation%>"</h2>
+		<h2>Join "<%=StringEscapeUtils.escapeHtml(meetingIDInvitation)%>"</h2>
 		<p>
 			<form name="form1" METHOD="GET">
 				Choose a username:<br />
 				<input type="text" name="username" />
-				<input type="hidden" name="meetingID" value="<%=meetingIDInvitation%>" />
+				<input type="hidden" name="meetingID" value="<%=StringEscapeUtils.escapeHtml(meetingIDInvitation)%>" />
 				<input type="hidden" name="action" value="join" />
 				<input id="submit-button" type="submit" value="Join" />
 			</form>
