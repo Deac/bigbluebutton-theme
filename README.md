@@ -33,3 +33,4 @@ Troubleshooting
 
 * In case of a <tt>NullPointerException</tt> occurs within <tt>getJoinURL()</tt> a few seconds after creating a conference, the frontend theme is probably not able to contact the BBB API. Make sure that your server can reslove the configured <tt>BigBlueButtonURL</tt>.
 * Some subdirectories accessible via HTTP are proxied from Nginx to Tomcat, some are not. This can be confusing, when a created file does not get accessible, because of the proxy configuration. Have a look at <tt>/etc/nginx/sites-available/bigbluebutton</tt>, which paths have a <tt>proxy_pass</tt> directive, and which not.
+* A <tt>Grails Runtime Exception</tt> with <tt>File "bbb_api_conf.jsp" not found</tt> occurs. Please re-read the Installation section.
